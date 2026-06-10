@@ -1,33 +1,133 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: black;
-    margin: 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+    color: #333;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+    line-height: 1.8;
 }
 
 h1 {
-    color: darkblue;
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 25px;
+    font-size: 38px;
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 10px;
 }
 
 h2 {
-    color: darkred;
+    color: #1d4ed8;
+    margin: 25px 0 15px;
+    text-align: center;
+}
+
+p:first-of-type {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 a {
-    color: blue;
+    display: inline-block;
     text-decoration: none;
-    margin-right: 10px;
+    background: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+a:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+p {
+    background: white;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
 }
 
 img {
-    border: 2px solid gray;
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
 table {
-    background-color: white;
+    width: 100%;
+    margin: 25px 0;
     border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-th, td {
-    padding: 8px;
+th {
+    background: #2563eb;
+    color: white;
+    padding: 14px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+tr:hover {
+    background: #dbeafe;
+}
+
+/* Списки */
+ul {
+    background: white;
+    padding: 20px 40px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    a {
+        display: block;
+        margin: 8px auto;
+        width: 220px;
+    }
+
+    table {
+        font-size: 14px;
+    }
 }
