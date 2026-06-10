@@ -110,24 +110,3 @@ ul {
 li {
     margin-bottom: 10px;
 }
-
-@media (max-width: 768px) {
-
-    body {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    a {
-        display: block;
-        margin: 8px auto;
-        width: 220px;
-    }
-
-    table {
-        font-size: 14px;
-    }
-}
